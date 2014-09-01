@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+
+		<!--titulo del website y descripcion para motores de busqueda-->
+		<title></title>
+		<meta name="description" content="">
+		
+		<!--Optimizado para moviles-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+		
+		<!-- Personal CSS -->
+		<link href="includes/css/styles.css" rel="stylesheet">
+		
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+		
+	</head>
+	<body>
+
+		<div class="container" id="main">
+
+
+			<div class="navbar navbar-fixed-top">
+				<div class="container">
+					
+					<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+					<a href="#" class="navbar-brand"><img src="images/logo.png" alt="Mi Logo"></a>
+					
+					<div class="nav-collapse collapse navbar-responsive-collapse">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#">Home</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Servivios <strong class="caret"></strong></a>
+
+								<ul class="dropdown-menu">
+
+									<li><a href="#">Diseño Web</a></li>
+									<li><a href="#">Programador Web</a></li>
+									<li><a href="#">SEO</a></li>
+									<li class="divider"></li>
+									<li class="dropdown-header">Mas servicios</li>
+									<li><a href="#">Creacion de Juegos</a></li>
+									<li><a href="#">Profesor Matematicas</a></li>
+									<li><a href="#">Venta Online</a></li>
+
+								</ul><!-- fin dropdown-menu -->
+							</li>
+							<li></li>
+						</ul><!-- fin nav -->
+
+						<form action="#" class="navbar-form pull-left">
+							<input type="text" class="form-control" placeholder="Buscar en el sitio..." id="inputBusqueda">
+							<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+						</form><!-- fin navbar-form -->
+						
+						<ul class="nav navbar-nav pull-right">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Mi Cuenta <strong class="caret"></strong></a>
+
+								<ul class="dropdown-menu">
+
+									<li><a href="#"><span class="glyphicon glyphicon-wrench"></span>Opciones</a></li>
+									<li><a href="#"><span class="glyphicon glyphicon-refresh"></span>Actualizar Perfil</a></li>
+									<li><a href="#"><span class="glyphicon glyphicon-briefcase"></span>Facturar</a></li>
+									<li class="divider"></li>
+									<li><a href="#"><span class="glyphicon glyphicon-off"></span>Salir</a></li>
+
+								</ul><!-- fin dropdown-menu -->
+
+							</li>
+						</ul><!-- nav pull-right -->
+
+					</div><!-- fin navbar-responsive-collapse -->
+
+				</div><!-- fin container-->
+			</div><!--fin navbar fixed-top -->
+
+
+			<div class="carousel slide" id="myCarousel">
+				
+				<!-- indicadores -->
+				<ol class="carousel-indicators">
+					<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+					<li data-slide-to="1" data-target="#myCarousel"></li>
+					<li data-slide-to="2" data-target="#myCarousel"></li>
+				</ol>
+				<!---->
+				<div class="carousel-inner">
+					<div class="item active" id="slide1">
+						<div class="carousel-caption">
+							<h4>Bootstrap 3</h4>
+							<p>Aprende como construir su primer web responsive con el nuevo brand Twitter Bootstrap 3!</p>
+						</div><!-- fin carousel-caption -->
+					</div><!--fin item -->
+
+					<div class="item" id="slide2">
+						<div class="carousel-caption">
+							<h4>Aprende a codificar en 4 horas!</h4>
+							<p>PSD a HTML5 &amp; CSS3 es un curso que ayuda a cientos de aspirantes a desarrolladores web</p>
+						</div><!-- fin carousel-caption -->
+					</div><!--fin item -->
+
+					<div class="item" id="slide3">
+						<div class="carousel-caption">
+							<h4>Web hosting 101</h4>
+							<p>Aprende como adquirir un nombre de dominio perfecto y paquete de hosting que sea facil de usar.</p>
+						</div><!-- fin carousel-caption -->
+					</div><!--fin item -->
+
+				</div><!-- fin carousel-inner -->
+
+				<!-- Controles -->
+				<a href="#myCarousel" class="left carousel-control" data-slide="prev"> <span class="icon-prev"></span> </a>
+				<a href="#myCarousel" class="right carousel-control" data-slide="next"> <span class="icon-next"></span> </a>
+
+			</div><!--fin myCarousel -->
+
+
+			<div class="row" id="bigCallout">
+				<div class="col-12">
+					
+					<div class="alert alert-success alert-block fade in" id="successAlert">
+						<button class="close" type="button" data-dismiss="alert">&times;</button>
+
+						<h4>Exito!</h4>
+						<p>Es justo un elemento mostrado usando JQuery. Click en la "x" arriba a la derecha para cerrar este mensaje de alert.</p>
+					</div><!-- fin alert -->
+
+
+					<!-- Visible solo en dispositivos pequeños -->
+					<div class="well well-small visible-sm">
+						<a href="#" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone"> Llamanos!</span></a>
+					</div><!-- fin well-small -->
+
+					<div class="well">
+						<div class="page-header">
+							<h1>Una pagina de Ejemplo <small>Un subtitulo</small></h1>
+						</div><!-- fin page-header -->
+
+						<p class="lead">Este parrafo tiene un resaltado distinto para mostrar algo mas importante que queramos mostrar. Se ve realmente bien mostrar texto explicado de esta manera.</p>
+
+						<a href="#" class="btn btn-large btn-primary" id="alertMe">Click en este boton grande</a>
+						<a href="#" class="btn btn-large btn-link">o en un link secundario</a>
+
+					</div><!-- fin well-->
+
+				</div><!-- fin col-12 -->
+			</div><!--fin bigCallout -->
+
+
+			<div class="row" id="featuresHeading">
+				<div class="col-12">
+					
+					<h2>Mas caracteristicas</h2>
+					<p class="lead">
+						Organic Kickstarter PBR, single-origin coffee 3 wolf moon scenester sartorial keytar typewriter seitan flexitarian you probably haven't heard of them. Twee Neutra bicycle rights small batch.
+					</p>
+
+				</div><!-- fin col-12 -->
+			</div><!--fin featuresHeading -->
+
+
+			<div class="row" id="features">
+
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						
+						<div class="panel-heading">
+							<h3 class="panel-title"> Marcado HTML5 </h3>
+						</div><!-- fin panel-heading -->
+						<img src="images/badge_html5.jpg" alt="HTML5" class="img-circle">
+
+						<p>Todas las marcas correspondientes al lenguaje basico para hacer paginas web.</p>
+
+						<a href="https://www.google.com.ar" target="_blank" class="btn btn-warning btn-block">Aprenda a codificar en HTML5</a>
+					</div><!-- fin panel -->
+				</div><!-- fin feature -->
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						
+						<div class="panel-heading">
+							<h3 class="panel-title"> Estilo con CSS3 </h3>
+						</div><!-- fin panel-heading -->
+						<img src="images/badge_css3.jpg" alt="CSS3" class="img-circle">
+
+						<p>Paginas web modernas y hermosas que llaman la atencion.</p>
+
+						<a href="https://www.google.com.ar" target="_blank" class="btn btn-danger btn-block">Aplica estilo con CSS3</a>
+					</div><!-- fin panel -->
+				</div><!-- fin feature -->
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						
+						<div class="panel-heading">
+							<h3 class="panel-title"> Framework con Bootstrap 3 </h3>
+						</div><!-- fin panel-heading -->
+						<img src="images/badge_bootstrap.jpg" alt="BOOTSTRAP 3" class="img-circle">
+
+						<p>Uso de este maravilloso framework css y javascript orientado a dispositivos moviles.</p>
+
+						<a href="https://www.google.com.ar" target="_blank" class="btn btn-info btn-block">Mas Bootstrap 3</a>
+					</div><!-- fin panel -->
+				</div><!-- fin feature -->
+
+			</div><!--fin features -->
+
+
+			<div class="row" id="moreInfo">
+
+				<div class="col-sm-6">
+
+					<h3>Contenido en pestañas</h3>	
+					<div class="tabbable">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#tab1" data-toggle="tab">Mapa</a></li>
+							<li><a href="#tab2" data-toggle="tab">Imagen</a></li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane active" id="tab1">
+								<h4><span class="glyphicon glyphicon-map-marker"></span> Nuestra localizacion <small>Elija su favorito </small></h4>
+
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21987.389779821362!2d-58.55814935!3d-34.65388821854773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7d93bab75a3%3A0xaafe140bc9dea3db!2sRamos+Mej%C3%ADa%2C+Buenos+Aires!5e1!3m2!1ses-419!2sar!4v1408893528915" width="100%" height="200" frameborder="0" style="border:0"></iframe>
+								
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam nemo sint molestias reprehenderit magni id et saepe error porro dolor in consectetur officiis aliquid, excepturi minus consequatur. Laborum, consequuntur, voluptatem.</p>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis similique commodi accusantium error laudantium doloremque, ut fugiat neque eveniet recusandae debitis quae, praesentium, ab corporis dolore rem reiciendis unde dicta.</p>
+							</div><!-- fin tab-pane -->
+							<div class="tab-pane" id="tab2">
+								<h4>Una imagen flotante a la izquierda <small>Usando placehold.it</small></h4>
+
+								<img src="http://placehold.it/140" class="thumbnail pull-left" alt="">
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab minus praesentium minima, voluptatem eaque, asperiores autem accusamus facilis possimus ratione expedita! Aperiam nostrum perferendis unde consequatur accusamus, voluptas commodi voluptate!</p>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam quis vero debitis eius adipisci est ducimus, ipsam ab libero nostrum eligendi aliquam quam, officia iste quo itaque, consequuntur vel doloremque.</p>
+
+								<hr>
+
+								<a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span> Click para ver una ventana modal</a>
+
+								<div class="modal fade" id="myModal">
+									<div class="modal-dialog">
+										<div class="modal-content">
+
+											<div class="modal-header">
+												<button class="close" data-dismiss="modal">&times;</button>	
+
+												<h4 class="modal-title">Una ventana modal</h4>
+											</div><!-- fin modal-header -->
+											
+											<div class="modal-body">
+												<h4>Texto en la ventana modal</h4>
+
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam voluptas, dolor perspiciatis, blanditiis mollitia eius quod. Officia accusantium sed laboriosam, adipisci minima id eos, rem totam numquam explicabo sint excepturi!</p>
+
+												<h4>Popover en modal</h4>
+												<a href="#" class="btn btn-danger pop" data-toggle="popover" data-placement="top" data-original-title="Clickeaste aqui!" data-content="Esto se mostrara">No haga click en este boton</a><!-- para que funcione el popover se le agrega el data-toggle="popover" , data-placement="top", data-original-title="Clickeaste aqui!" data-content="Esto se mostrara" -->
+												
+												<h4>Tooltip en modal</h4>
+												<a href="#" data-original-title="Tooltip" rel="tooltip"> Este link </a> debe tener un tooltip, y mostrarlo en <a href="#" data-original-title="Jajaja" rel="tooltip"> cada uno! </a><!-- para que funcione el tooltip se le agrega el data-original-title="Tooltip" rel="tooltip" -->
+
+												<hr>
+
+												<p><small class="text-muted">PS. This formulario no hace nada, solo es una muestra</small></p>
+												
+												<form action="" class="form-horizontal">
+													<div class="form-group">
+														<label for="inputNombre" class="col-lg-2 control-label">Nombre</label>
+														<div class="col-lg-10">
+															<input type="text" class="form-control" id="inputNombre" placeholder="Nombre">
+														</div>
+													</div>
+
+													<div class="form-group">
+														<label for="inputEmail" class="col-lg-2 control-label">Email</label>
+														<div class="col-lg-10">
+															<input type="email" class="form-control" id="inputEmail" placeholder="Email">
+														</div>
+													</div>
+
+													<div class="form-group">
+														<label for="inputMensaje" class="col-lg-2 control-label">Mensaje</label>
+														<div class="col-lg-10">
+															<textarea name="" class="form-control" id="inputMensaje" rows="3" placeholder="Mensaje"></textarea>
+															<button class="btn btn-success pull-right" type="submit">Enviar</button>
+														</div>
+													</div>
+												</form>
+
+											</div><!-- fin modal-body -->
+											
+											<div class="modal-footer">
+												<button class="btn btn-default" data-dismiss="modal" type="button">Cerrar</button><button class="btn btn-primary" type="button">Guardar Cambios</button>
+											</div><!-- fin modal-footer -->
+
+										</div><!-- fin modal-content -->
+									</div><!-- fin modal-dialog -->
+								</div><!-- fin myModal -->
+
+							</div><!-- fin tab-pane -->
+						</div><!-- fin tab-content -->
+					</div><!-- fin tabbable -->
+
+				</div><!-- fin col-sm-6 -->
+				
+				<div class="col-sm-6">
+					<h3>Algun texto informativo</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos cum excepturi distinctio aut eaque architecto nisi, nesciunt nam. Exercitationem sed at autem accusantium maiores, atque quaerat numquam quisquam nesciunt, temporibus.</p>
+
+					<h4>Una lista agrupada</h4>
+
+					<div class="list-group">
+						<a href="#" class="list-group-item active">
+							<h4 class="list-group-item-heading">Kale</h4>
+							<p class="list-group-item-text">Kale es un titulo de este item de agrupacion que pertenece a el grupo.</p>
+						</a>
+
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">Hola</h4>
+							<p class="list-group-item-text">Kale es un titulo de este item de agrupacion que pertenece a el grupo.</p>
+						</a>
+
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">Chau</h4>
+							<p class="list-group-item-text">Kale es un titulo de este item de agrupacion que pertenece a el grupo.</p>
+						</a>
+					</div><!-- fin list-group -->
+
+					<h5>Una pequeña cabecera</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, alias. Veritatis dolores facere ipsam omnis. Magni est ad unde eius aliquid voluptatum odit aperiam. Quia earum ducimus nulla consequuntur laborum!</p>
+
+				</div><!-- fin col-sm-6 -->
+
+			</div><!--fin moreInfo -->
+
+			<hr>
+
+			<div class="row" id="moreCourses">
+				<div class="col-12">
+					<h3>Aprende mas acerca del diseño web</h3>
+					<div class="thumbnails row">
+
+						<div class="col-6">
+							<div class="thumbnail">
+								<img src="images/item_psd2html5.jpg" alt="PSD a HTML5 & CSS3">
+								<div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> <sup>$</sup>80</div>
+								<div class="caption">
+									<h3>PSD a HTML5 &amp; CSS3</h3>
+
+									<p>Aprenda como tomar un PSD y cambiarlo a un hermoso y codificable elemento para HTML5 &amp; CSS3. Conviertase en un diseñador web.</p>
+									
+									<p>
+										<a href="https://www.udemy.com/build-beautiful-html5-website/" class="btn btn-primary btn-small" target="_blank">Tomar curso</a>
+										<a href="https://www.udemy.com/build-beautiful-html5-website/" class="btn btn-small btn-link">Leer mas</a>
+									</p>
+								</div><!-- fin caption -->
+							</div><!-- fin thumbnail  -->
+						</div><!-- fin col-6  -->
+
+						<div class="col-6">
+							<div class="thumbnail">
+								<img src="images/item_webhosting101.jpg" alt="Almacenamiento web 101">
+								<div class="label label-info price"><span class="glyphicon glyphicon-tag"></span> Gratis</div>
+								<div class="caption">
+									<h3>Almacenamiento web 101</h3>
+
+									<p>Aprenda como publicar su website en vivo y como almacenarlo en un hosting. Tambien cree su sitio wordpress en 5 minutos!</p>
+
+									<p>
+										<a href="https://www.udemy.com/web-hosting-101/" class="btn btn-primary btn-small" target="_blank">Tomar curso</a>
+										<a href="https://www.udemy.com/web-hosting-101/" class="btn btn-small btn-link">Leer mas</a>
+									</p>
+								</div><!-- fin caption -->
+							</div><!-- fin thumbnail  -->
+						</div><!-- fin col-6  -->
+
+					</div><!-- fin row -->
+				</div><!-- fin moreCourses -->
+			</div><!-- fin moreCourses -->
+
+
+		</div><!--fin container -->
+		
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<h6>Copyright &copy; 2014 {name}</h6>
+					</div><!-- fin col-sm-2 -->
+
+					<div class="col-sm-4">
+						<h6>Sobre Nosotros </h6>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam fugit adipisci excepturi voluptas sequi commodi minus quo totam doloremque. Itaque voluptates natus aliquid ex labore aliquam obcaecati mollitia fugiat at.</p>
+					</div><!-- fin col-sm-4 -->
+
+					<div class="col-sm-2">
+						<h6>Navegacion</h6>
+						<ul class="unstyled">
+							<li><a href="#">Inicio</a></li>
+							<li><a href="#">Servicios</a></li>
+							<li><a href="#">Enlaces</a></li>
+							<li><a href="#">Contacto</a></li>
+						</ul>
+					</div><!-- fin col-sm-2 -->
+
+					<div class="col-sm-2">
+						<h6>Siguenos</h6>
+						<ul class="unstyled">
+							<li><a href="#">Twitter</a></li>
+							<li><a href="#">Facebook</a></li>
+							<li><a href="#">Google Plus</a></li>
+						</ul>
+					</div><!-- fin col-sm-2 -->
+
+					<div class="col-sm-2">
+						<h6>Codificado con <span class="glyphicon glyphicon-heart"></span> por Ricardo</h6>
+					</div><!-- fin col-sm-2 -->
+				</div><!-- fin row -->
+			</div><!-- fin container -->
+		</footer>
+
+	<!-- Todos los scripts javascript van debajo de la pagina para una carga mas rapida -->
+		
+	<!-- Primero la version online de jquery-->
+	<script src="http://code.jquery.com/jquery.js"></script>
+	
+	<!-- Si no tiene acceso online, lo cargara de un archivo local -->
+	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+	
+	<!-- Bootstrap JS -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- Personal JS -->
+	<script src="includes/js/script.js"></script>
+	
+	</body>
+</html>
